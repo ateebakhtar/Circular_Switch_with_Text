@@ -1,0 +1,3 @@
+include ':SwitchWithText'
+include ':app'
+rootProject.name = "Circular Switch with Text"
