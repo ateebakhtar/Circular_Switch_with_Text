@@ -1,4 +1,5 @@
 # Circular Switch with Text and Background 
+[![](https://jitpack.io/v/ateebakhtar/Circular_Switch_with_Text.svg)](https://jitpack.io/#ateebakhtar/Circular_Switch_with_Text) 
 
 This library is used to make a circular bordered switch and changeable text and background, there are custom on click methods that switch background and text color automatically.
 
@@ -15,7 +16,7 @@ maven { url 'https://jitpack.io' }
 Add the dependency:
 
 ```bash
-implementation 'com.github.User:Repo:Tag'
+implementation 'implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:Tag'
 ```
 
 
