@@ -54,7 +54,7 @@ CircularSwitch circularSwitch;
 private void init() {
     circularSwitch = findViewById(R.id.circle_center);
     circularSwitch.setOnButton("On",openOn);
-    circularSwitch.setOffButton("Off",openOn);
+    circularSwitch.setOffButton("Off",openOff);
 }
 
 private View.OnClickListener openOn = new View.OnClickListener() {
