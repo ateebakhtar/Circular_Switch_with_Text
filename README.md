@@ -48,3 +48,24 @@ circularSwitch.setOnButton("Photos") {
 }
 ```
 
+Use this is in your Java file
+```Java
+CircularSwitch circularSwitch;
+private void init() {
+    circularSwitch = findViewById(R.id.circle_center);
+    circularSwitch.setOnButton("On",openOn);
+    circularSwitch.setOffButton("Off",openOn);
+}
+
+private View.OnClickListener openOn = new View.OnClickListener() {
+    public void onClick(View v) {
+        //todo add logic here
+    }
+};
+
+private View.OnClickListener openOff = new View.OnClickListener() {
+    public void onClick(View v) {
+        //todo add logic here
+    }
+};
+```
