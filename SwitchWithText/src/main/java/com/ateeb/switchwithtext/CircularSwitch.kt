@@ -40,10 +40,10 @@ class CircularSwitch : ConstraintLayout {
         initLayout(context)
     }
 
-    fun setOnButton(text: String, onClickListener: (view: View) -> Unit) {
+    fun setOnButton(text: String, onClickListener:  View.OnClickListener) {
         onButton.setText(text)
         onButton.setOnClickListener {
-            onClickListener.invoke(it)
+            onClickListener.onClick(it)
             onButton.setTextColor(resources.getColor(R.color.green))
             offButton.setTextColor(resources.getColor(R.color.grey))
             onButton.background = resources.getDrawable(R.drawable.background_card)
