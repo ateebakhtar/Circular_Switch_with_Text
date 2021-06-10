@@ -16,7 +16,7 @@ maven { url 'https://jitpack.io' }
 Add the dependency:
 
 ```bash
-implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:Tag'
+implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:1.1.0'
 ```
 
 
@@ -24,7 +24,7 @@ implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:Tag'
 
 Insert in the xml of your respective main file
 
-```python
+```xml
  <com.ateeb.switchwithtext.CircularSwitch
         android:id="@+id/circle_center"
         android:layout_width="wrap_content"
@@ -35,7 +35,6 @@ Insert in the xml of your respective main file
         app:layout_constraintTop_toTopOf="parent"
         />
 ```
-
 Use this is in your Kotlin file
 
 ```kotlin
@@ -54,7 +53,7 @@ CircularSwitch circularSwitch;
 private void init() {
     circularSwitch = findViewById(R.id.circle_center);
     circularSwitch.setOnButton("On",openOn);
-    circularSwitch.setOffButton("Off",openOn);
+    circularSwitch.setOffButton("Off",openOff);
 }
 
 private View.OnClickListener openOn = new View.OnClickListener() {
@@ -68,4 +67,28 @@ private View.OnClickListener openOff = new View.OnClickListener() {
         //todo add logic here
     }
 };
+```
+## Additional Properties
+ 
+Additional Properties in XML
+```xml
+app:activeButtonTextColor="@color/green"
+app:positiveButtonTextColorForInactive="@color/black"
+app:negativeButtonTextColorForInactive="@color/black"
+app:setPositiveAsActive="false"
+```
+Additional Properties in Java
+```java
+circularSwitch.setActiveButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+circularSwitch.setInActiveNegativeButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+circularSwitch.setInActivePositiveButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+circularSwitch.setPostiveActive(false);
+```
+
+Additional Properties in Kotlin
+```kotlin
+circularSwitch.activeButtonColor = ResourcesCompat.getColor(resources, R.color.grey, null)
+circularSwitch.inActiveNegativeButtonColor = ResourcesCompat.getColor(resources, R.color.grey, null)
+circularSwitch.inActivePositiveButtonColor = ResourcesCompat.getColor(resources, R.color.grey, null)
+circularSwitch.postiveActive = false
 ```
