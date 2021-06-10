@@ -68,10 +68,27 @@ private View.OnClickListener openOff = new View.OnClickListener() {
     }
 };
 ```
-Additional Properties
+##Additional Properties
+ 
+Additional Properties in XML
 ```xml
      app:activeButtonTextColor="@color/green"
      app:positiveButtonTextColorForInactive="@color/black"
      app:negativeButtonTextColorForInactive="@color/black"
      app:setPositiveAsActive="false"
+```
+Additional Properties in Java
+```java
+circularSwitch.setActiveButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+circularSwitch.setInActiveNegativeButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+circularSwitch.setInActivePositiveButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+circularSwitch.setPostiveActive(false);
+```
+
+Additional Properties in Kotlin
+```kotlin
+circularSwitch.activeButtonColor = ResourcesCompat.getColor(resources, R.color.grey, null)
+circularSwitch.inActiveNegativeButtonColor = ResourcesCompat.getColor(resources, R.color.grey, null)
+circularSwitch.inActivePositiveButtonColor = ResourcesCompat.getColor(resources, R.color.grey, null)
+circularSwitch.postiveActive = false
 ```
