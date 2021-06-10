@@ -68,14 +68,14 @@ private View.OnClickListener openOff = new View.OnClickListener() {
     }
 };
 ```
-##Additional Properties
+## Additional Properties
  
 Additional Properties in XML
 ```xml
-     app:activeButtonTextColor="@color/green"
-     app:positiveButtonTextColorForInactive="@color/black"
-     app:negativeButtonTextColorForInactive="@color/black"
-     app:setPositiveAsActive="false"
+app:activeButtonTextColor="@color/green"
+app:positiveButtonTextColorForInactive="@color/black"
+app:negativeButtonTextColorForInactive="@color/black"
+app:setPositiveAsActive="false"
 ```
 Additional Properties in Java
 ```java
