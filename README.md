@@ -16,7 +16,7 @@ maven { url 'https://jitpack.io' }
 Add the dependency:
 
 ```bash
-implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:1.1.0'
+implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:1.2.0'
 ```
 
 
