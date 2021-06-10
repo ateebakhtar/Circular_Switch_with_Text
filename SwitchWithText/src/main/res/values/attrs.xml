@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularSwitch">
+
+        <attr name="positiveButtonTextColorForInactive" format="color"/>
+        <attr name="negativeButtonTextColorForInactive" format="color"/>
+        <attr name="activeButtonTextColor" format="color"/>
+        <attr name="setPositiveAsActive" format="boolean"/>
+    </declare-styleable>
+
+</resources>

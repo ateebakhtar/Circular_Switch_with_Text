@@ -7,6 +7,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import com.ateeb.switchwithtext.CircularSwitch;
 
@@ -22,8 +23,16 @@ public class JavaImplementation extends AppCompatActivity {
     CircularSwitch circularSwitch;
     private void init() {
         circularSwitch = findViewById(R.id.circle_center);
+
+        circularSwitch.setActiveButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+        circularSwitch.setInActiveNegativeButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+        circularSwitch.setInActivePositiveButtonColor(ResourcesCompat.getColor(getResources(),R.color.grey,null));
+        circularSwitch.setPostiveActive(false);
+
         circularSwitch.setOnButton("On",openOn);
         circularSwitch.setOffButton("Off",openOn);
+
+
     }
 
     private View.OnClickListener openOn = new View.OnClickListener() {
