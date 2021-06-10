@@ -24,7 +24,7 @@ implementation 'com.github.ateebakhtar:Circular_Switch_with_Text:1.1.0'
 
 Insert in the xml of your respective main file
 
-```python
+```xml
  <com.ateeb.switchwithtext.CircularSwitch
         android:id="@+id/circle_center"
         android:layout_width="wrap_content"
@@ -35,7 +35,6 @@ Insert in the xml of your respective main file
         app:layout_constraintTop_toTopOf="parent"
         />
 ```
-
 Use this is in your Kotlin file
 
 ```kotlin
@@ -68,4 +67,11 @@ private View.OnClickListener openOff = new View.OnClickListener() {
         //todo add logic here
     }
 };
+```
+Additional Properties
+```xml
+     app:activeButtonTextColor="@color/green"
+     app:positiveButtonTextColorForInactive="@color/black"
+     app:negativeButtonTextColorForInactive="@color/black"
+     app:setPositiveAsActive="false"
 ```
